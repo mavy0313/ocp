@@ -10,7 +10,7 @@ public enum SeasonWorkingHoursDefaultImpl {
             System.out.println("long hours");
         }
     }, SPRING, FALL;
-    
+
     public void printHours() {
         System.out.println("default hours");
     }
