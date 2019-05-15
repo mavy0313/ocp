@@ -8,5 +8,11 @@ public class ReadInventoryThread extends Thread {
 
     public static void main(String[] args) {
         (new ReadInventoryThread()).start();
+
+        System.out.println("begin");
+        (new ReadInventoryThread()).start();
+        (new Thread(new PrintData())).start();
+        (new ReadInventoryThread()).start();
+        System.out.println("end");
     }
 }
